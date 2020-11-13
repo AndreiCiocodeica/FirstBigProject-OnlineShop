@@ -1,0 +1,41 @@
+https://www.themealdb.com/api.php
+
+-meals dupa alfabet
+https://www.themealdb.com/api/json/v1/1/search.php?f=a
+https://www.themealdb.com/api/json/v1/1/search.php?f=b
+https://www.themealdb.com/api/json/v1/1/search.php?f=c
+https://www.themealdb.com/api/json/v1/1/search.php?f=d
+https://www.themealdb.com/api/json/v1/1/search.php?s=Cream%20Cheese%20Tart
+
+-random meal(nu imi trebuie)
+https://www.themealdb.com/api/json/v1/1/random.php
+
+-meal category
+https://www.themealdb.com/api/json/v1/1/categories.php
+
+-filter by category
+https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood
+
+-cauta dupa ID
+https://www.themealdb.com/api/json/v1/1/lookup.php?i=52772
+
+-drinks categories
+https://www.thecocktaildb.com/api/json/v1/1/list.php?c=list
+-drinks 
+https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Soft%20Drink%20/%20Soda
+
+! pot cauta un produs dupa prima litera, sau ID in linkurile specifice
+
+
+*TO DO LIST
+-100 de produse??
+-daca am poza salvata in folderul json - cum o adaug in html????
+                                        -posibil ca la url sa pun locatia din folder?
+-proprietatile unui obiect din meals:   -mealCategory
+                                        -mealName
+                                        -mealId
+                                        -mealPicture
+                                        -mealDescription
+                                        -price
+                                        -stock
+                                        -preparation time

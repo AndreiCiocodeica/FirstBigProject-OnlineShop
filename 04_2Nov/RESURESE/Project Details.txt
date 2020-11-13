@@ -1,0 +1,31 @@
+HTML:
+index.html -> navbar(logo, menu), container, footer(optional)
+details.html-> product details
+admin.html -> editable page for updating/deleting products
+cart.html -> page for manipulation cart(view product, update quantities, delete products)
+
+Java Script:
+main.js -> linked as first js file in any html that uses id
+        -> Product class
+        -> General methods used in the project:
+            -> getCarItems()
+            -> getProduct()
+            -> getProductsById()
+            -> getProductDetails(id)
+            -> createProduct()
+            -> updateProductOnDB()
+            -> addNewProductOnDB()
+            -> deleteProductFromDB()
+            -> other helper methods
+index.js -> display products and use the loader
+admin.js -> manipulate a form for(eventListeners)
+         -> update, delete, create new product and add on DB(hint: use the helper methods from main.js)
+         -> clearForm(), submitNewProduct(), deleteProduct(), showNewProduct(), editProduct()
+cart.js -> displayCartItems()
+        -> displayEmptyCart()
+        -> increaseQuantity()
+        -> decreaseQuantity()
+        -> removeCartItem()
+        -> calculateTotalPrice()
+        -> checkoutProductsFromCart()
+details.js -> show product details 
