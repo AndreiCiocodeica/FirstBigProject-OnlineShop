@@ -1,0 +1,10 @@
+Cuprins -Project Content
+
+
+-Info 	-project info
+	-concepts used
+
+-layout	-pages
+	-functionalities
+-test 	-open site
+	-bugs
