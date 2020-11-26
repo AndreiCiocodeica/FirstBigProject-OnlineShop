@@ -26,7 +26,7 @@ function showMenu() {
         getDessertFromAPI();
         getDrinksFromAPI();
         getNewMealAddedFromAPI();
-    }, 1500);
+    }, 1900);
 }
 
 function getBreakfastFromAPI() {

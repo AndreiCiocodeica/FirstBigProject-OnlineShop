@@ -57,7 +57,7 @@ function showAllMeals() {
             showEditMealDiv();
             showMealInputsForEdit(id);
         }
-    }, 2900);
+    }, 1900);
 }
 
 async function getAllMealsInBreakfastFromAPI() {
@@ -1466,5 +1466,5 @@ function showLoader() {
 
     setTimeout(() => {
         loaderSVG.remove();
-    }, 3000);
+    }, 2000);
 }

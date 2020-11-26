@@ -75,7 +75,7 @@ function showBreakfast() {
             .catch(function (err) {
                 console.log(err);
             });
-    }, 500);
+    }, 800);
 }
 
 function showStarter() {
@@ -113,7 +113,7 @@ function showStarter() {
             .catch(function (err) {
                 console.log(err);
             });
-    }, 500);
+    }, 800);
 }
 
 function showChicken() {
@@ -151,7 +151,7 @@ function showChicken() {
             .catch(function (err) {
                 console.log(err);
             });
-    }, 500);
+    }, 800);
 }
 
 function showBeef() {
@@ -189,7 +189,7 @@ function showBeef() {
             .catch(function (err) {
                 console.log(err);
             });
-    }, 500);
+    }, 800);
 }
 
 function showPork() {
@@ -227,7 +227,7 @@ function showPork() {
             .catch(function (err) {
                 console.log(err);
             });
-    }, 500);
+    }, 800);
 }
 
 function showLamb() {
@@ -265,7 +265,7 @@ function showLamb() {
             .catch(function (err) {
                 console.log(err);
             });
-    }, 500);
+    }, 800);
 }
 
 function showSeafood() {
@@ -303,7 +303,7 @@ function showSeafood() {
             .catch(function (err) {
                 console.log(err);
             });
-    }, 500);
+    }, 800);
 }
 
 function showPasta() {
@@ -341,7 +341,7 @@ function showPasta() {
             .catch(function (err) {
                 console.log(err);
             });
-    }, 500);
+    }, 800);
 }
 
 function showDessert() {
@@ -379,7 +379,7 @@ function showDessert() {
             .catch(function (err) {
                 console.log(err);
             });
-    }, 500)
+    }, 800)
 }
 
 function showDrinks() {
@@ -417,7 +417,7 @@ function showDrinks() {
             .catch(function (err) {
                 console.log(err);
             });
-    }, 500);
+    }, 800);
 }
 
 function showNewMeal() {
@@ -460,7 +460,7 @@ function showNewMeal() {
             .catch(function (err) {
                 console.log(err);
             });
-    }, 500);
+    }, 800);
 }
 //-clear menu
 function clearMenu() {

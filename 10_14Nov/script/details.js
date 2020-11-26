@@ -12,16 +12,18 @@ window.onload = () => {
 }
 //-showRecipe by ID
 function showRecipe(id) {
-    showRecipeForBreakfast(id);
-    showRecipeForStarter(id);
-    showRecipeForChicken(id);
-    showRecipeForBeef(id);
-    showRecipeForPork(id);
-    showRecipeForLamb(id);
-    showRecipeForSeafood(id);
-    showRecipeForPasta(id);
-    showRecipeForDessert(id);
-    showRecipeForNewMeal(id);
+    setTimeout(() => {
+        showRecipeForBreakfast(id);
+        showRecipeForStarter(id);
+        showRecipeForChicken(id);
+        showRecipeForBeef(id);
+        showRecipeForPork(id);
+        showRecipeForLamb(id);
+        showRecipeForSeafood(id);
+        showRecipeForPasta(id);
+        showRecipeForDessert(id);
+        showRecipeForNewMeal(id);
+    }, 1600);
 }
 
 function showRecipeForBreakfast(id) {
