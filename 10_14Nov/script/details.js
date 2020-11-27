@@ -35,14 +35,16 @@ function showRecipeForBreakfast(id) {
         .then(function (data) {
             // console.log(data);
             data[0].breakfast.forEach((e) => {
-                if (id == e.mealId) {
-                    showRecipesById.innerHTML = `
-                        <h2>${e.mealName}</h2>
-                        <div>
-                            <img src="${e.mealPicture}">
-                            <p>${e.mealRecipe}</p>
-                        </div>
-                    `;
+                if (e) {
+                    if (id == e.mealId) {
+                        showRecipesById.innerHTML = `
+                            <h2>${e.mealName}</h2>
+                            <div>
+                                <img src="${e.mealPicture}">
+                                <p>${e.mealRecipe}</p>
+                            </div>
+                        `;
+                    }
                 }
             });
         })
@@ -60,14 +62,16 @@ function showRecipeForStarter(id) {
         .then(function (data) {
             // console.log(data);
             data[0].starter.forEach((e) => {
-                if (id == e.mealId) {
-                    showRecipesById.innerHTML = `
-                        <h2>${e.mealName}</h2>
-                        <div>
-                            <img src="${e.mealPicture}">
-                            <p>${e.mealRecipe}</p>
-                        </div>
-                    `;
+                if (e) {
+                    if (id == e.mealId) {
+                        showRecipesById.innerHTML = `
+                            <h2>${e.mealName}</h2>
+                            <div>
+                                <img src="${e.mealPicture}">
+                                <p>${e.mealRecipe}</p>
+                            </div>
+                        `;
+                    }
                 }
             });
         })
@@ -85,14 +89,16 @@ function showRecipeForChicken(id) {
         .then(function (data) {
             // console.log(data);
             data[0].chicken.forEach((e) => {
-                if (id == e.mealId) {
-                    showRecipesById.innerHTML = `
-                        <h2>${e.mealName}</h2>
-                        <div>
-                            <img src="${e.mealPicture}">
-                            <p>${e.mealRecipe}</p>
-                        </div>
-                    `;
+                if (e) {
+                    if (id == e.mealId) {
+                        showRecipesById.innerHTML = `
+                            <h2>${e.mealName}</h2>
+                            <div>
+                                <img src="${e.mealPicture}">
+                                <p>${e.mealRecipe}</p>
+                            </div>
+                        `;
+                    }
                 }
             });
         })
@@ -110,14 +116,16 @@ function showRecipeForBeef(id) {
         .then(function (data) {
             // console.log(data);
             data[0].beef.forEach((e) => {
-                if (id == e.mealId) {
-                    showRecipesById.innerHTML = `
-                        <h2>${e.mealName}</h2>
-                        <div>
-                            <img src="${e.mealPicture}">
-                            <p>${e.mealRecipe}</p>
-                        </div>
-                    `;
+                if (e) {
+                    if (id == e.mealId) {
+                        showRecipesById.innerHTML = `
+                            <h2>${e.mealName}</h2>
+                            <div>
+                                <img src="${e.mealPicture}">
+                                <p>${e.mealRecipe}</p>
+                            </div>
+                        `;
+                    }
                 }
             });
         })
@@ -135,14 +143,16 @@ function showRecipeForPork(id) {
         .then(function (data) {
             // console.log(data);
             data[0].pork.forEach((e) => {
-                if (id == e.mealId) {
-                    showRecipesById.innerHTML = `
-                        <h2>${e.mealName}</h2>
-                        <div>
-                            <img src="${e.mealPicture}">
-                            <p>${e.mealRecipe}</p>
-                        </div>
-                    `;
+                if (e) {
+                    if (id == e.mealId) {
+                        showRecipesById.innerHTML = `
+                            <h2>${e.mealName}</h2>
+                            <div>
+                                <img src="${e.mealPicture}">
+                                <p>${e.mealRecipe}</p>
+                            </div>
+                        `;
+                    }
                 }
             });
         })
@@ -160,14 +170,16 @@ function showRecipeForLamb(id) {
         .then(function (data) {
             // console.log(data);
             data[0].lamb.forEach((e) => {
-                if (id == e.mealId) {
-                    showRecipesById.innerHTML = `
-                        <h2>${e.mealName}</h2>
-                        <div>
-                            <img src="${e.mealPicture}">
-                            <p>${e.mealRecipe}</p>
-                        </div>
-                    `;
+                if (e) {
+                    if (id == e.mealId) {
+                        showRecipesById.innerHTML = `
+                            <h2>${e.mealName}</h2>
+                            <div>
+                                <img src="${e.mealPicture}">
+                                <p>${e.mealRecipe}</p>
+                            </div>
+                        `;
+                    }
                 }
             });
         })
@@ -185,14 +197,16 @@ function showRecipeForSeafood(id) {
         .then(function (data) {
             // console.log(data);
             data[0].seafood.forEach((e) => {
-                if (id == e.mealId) {
-                    showRecipesById.innerHTML = `
-                        <h2>${e.mealName}</h2>
-                        <div>
-                            <img src="${e.mealPicture}">
-                            <p>${e.mealRecipe}</p>
-                        </div>
-                    `;
+                if (e) {
+                    if (id == e.mealId) {
+                        showRecipesById.innerHTML = `
+                            <h2>${e.mealName}</h2>
+                            <div>
+                                <img src="${e.mealPicture}">
+                                <p>${e.mealRecipe}</p>
+                            </div>
+                        `;
+                    }
                 }
             });
         })
@@ -210,14 +224,16 @@ function showRecipeForPasta(id) {
         .then(function (data) {
             // console.log(data);
             data[0].pasta.forEach((e) => {
-                if (id == e.mealId) {
-                    showRecipesById.innerHTML = `
-                        <h2>${e.mealName}</h2>
-                        <div>
-                            <img src="${e.mealPicture}">
-                            <p>${e.mealRecipe}</p>
-                        </div>
-                    `;
+                if (e) {
+                    if (id == e.mealId) {
+                        showRecipesById.innerHTML = `
+                            <h2>${e.mealName}</h2>
+                            <div>
+                                <img src="${e.mealPicture}">
+                                <p>${e.mealRecipe}</p>
+                            </div>
+                        `;
+                    }
                 }
             });
         })
@@ -235,14 +251,16 @@ function showRecipeForDessert(id) {
         .then(function (data) {
             // console.log(data);
             data[0].dessert.forEach((e) => {
-                if (id == e.mealId) {
-                    showRecipesById.innerHTML = `
-                        <h2>${e.mealName}</h2>
-                        <div>
-                            <img src="${e.mealPicture}">
-                            <p>${e.mealRecipe}</p>
-                        </div>
-                    `;
+                if (e) {
+                    if (id == e.mealId) {
+                        showRecipesById.innerHTML = `
+                            <h2>${e.mealName}</h2>
+                            <div>
+                                <img src="${e.mealPicture}">
+                                <p>${e.mealRecipe}</p>
+                            </div>
+                        `;
+                    }
                 }
             });
         })
@@ -262,14 +280,16 @@ function showRecipeForNewMeal(id) {
             let ids = Object.keys(data);
             if (ids != 0) {
                 ids.forEach((key) => {
-                    if (id == data[key].mealId && key != 0) {
-                        showRecipesById.innerHTML = `
-                            <h2>${data[key].mealName}</h2>
-                            <div>
-                                <img src="${data[key].mealPicture}">
-                                <p>${data[key].mealRecipe}</p>
-                            </div>
-                        `;
+                    if (data[key]) {
+                        if (id == data[key].mealId && key != 0) {
+                            showRecipesById.innerHTML = `
+                                <h2>${data[key].mealName}</h2>
+                                <div>
+                                    <img src="${data[key].mealPicture}">
+                                    <p>${data[key].mealRecipe}</p>
+                                </div>
+                            `;
+                        }
                     }
                 });
             }

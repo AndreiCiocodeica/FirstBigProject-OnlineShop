@@ -56,18 +56,20 @@ function showBreakfast() {
             .then(function (data) {
                 // console.log(data);
                 data[0].breakfast.forEach((e) => {
-                    breakfastOnlineList.innerHTML += `
-                    <div class="shop-item">
-                        <div class="title-price">
-                            <p class="shop-item-title">${e.mealName}</p>
-                            <p class="shop-item-price">${e.mealPrice} $</p>
-                        </div>
-                        <small>${e.mealDescription}</small>
-                        <p><small>Preparation time - ${e.mealPrepTime}mins</small></p>
-                        <button class="shop-item-button">Add to cart</button>
-                        <hr/>
-                    </div>
-                `;
+                    if (e) {
+                        breakfastOnlineList.innerHTML += `
+                            <div class="shop-item">
+                                <div class="title-price">
+                                    <p class="shop-item-title">${e.mealName}</p>
+                                    <p class="shop-item-price">${e.mealPrice} $</p>
+                                </div>
+                                <small>${e.mealDescription}</small>
+                                <p><small>Preparation time - ${e.mealPrepTime}mins</small></p>
+                                <button class="shop-item-button">Add to cart</button>
+                                <hr/>
+                            </div>
+                        `;
+                    }
                     p1Title.classList.remove('hidden-p');
                 });
                 addEventListeners();
@@ -94,18 +96,20 @@ function showStarter() {
             .then(function (data) {
                 // console.log(data);
                 data[0].starter.forEach((e) => {
-                    starterOnlineList.innerHTML += `
-                        <div class="shop-item">
-                            <div class="title-price">
-                                <p class="shop-item-title">${e.mealName}</p>
-                                <p class="shop-item-price">${e.mealPrice} $</p>
+                    if (e) {
+                        starterOnlineList.innerHTML += `
+                            <div class="shop-item">
+                                <div class="title-price">
+                                    <p class="shop-item-title">${e.mealName}</p>
+                                    <p class="shop-item-price">${e.mealPrice} $</p>
+                                </div>
+                                <small>${e.mealDescription}</small>
+                                <p><small>Preparation time - ${e.mealPrepTime}mins</small></p>
+                                <button class="shop-item-button">Add to cart</button>
+                                <hr/>
                             </div>
-                            <small>${e.mealDescription}</small>
-                            <p><small>Preparation time - ${e.mealPrepTime}mins</small></p>
-                            <button class="shop-item-button">Add to cart</button>
-                            <hr/>
-                        </div>
-                    `;
+                        `;
+                    }
                     p2Title.classList.remove('hidden-p');
                 });
                 addEventListeners();
@@ -132,18 +136,20 @@ function showChicken() {
             .then(function (data) {
                 // console.log(data);
                 data[0].chicken.forEach((e) => {
-                    chickenOnlineList.innerHTML += `
-                        <div class="shop-item">
-                            <div class="title-price">
-                                <p class="shop-item-title">${e.mealName}</p>
-                                <p class="shop-item-price">${e.mealPrice} $</p>
+                    if (e) {
+                        chickenOnlineList.innerHTML += `
+                            <div class="shop-item">
+                                <div class="title-price">
+                                    <p class="shop-item-title">${e.mealName}</p>
+                                    <p class="shop-item-price">${e.mealPrice} $</p>
+                                </div>
+                                <small>${e.mealDescription}</small>
+                                <p><small>Preparation time - ${e.mealPrepTime}mins</small></p>
+                                <button class="shop-item-button">Add to cart</button>
+                                <hr/>
                             </div>
-                            <small>${e.mealDescription}</small>
-                            <p><small>Preparation time - ${e.mealPrepTime}mins</small></p>
-                            <button class="shop-item-button">Add to cart</button>
-                            <hr/>
-                        </div>
-                    `;
+                        `;
+                    }
                     p3Title.classList.remove('hidden-p');
                 });
                 addEventListeners();
@@ -170,18 +176,20 @@ function showBeef() {
             .then(function (data) {
                 // console.log(data);
                 data[0].beef.forEach((e) => {
-                    beefOnlineList.innerHTML += `
-                        <div class="shop-item">
-                            <div class="title-price">
-                                <p class="shop-item-title">${e.mealName}</p>
-                                <p class="shop-item-price">${e.mealPrice} $</p>
+                    if (e) {
+                        beefOnlineList.innerHTML += `
+                            <div class="shop-item">
+                                <div class="title-price">
+                                    <p class="shop-item-title">${e.mealName}</p>
+                                    <p class="shop-item-price">${e.mealPrice} $</p>
+                                </div>
+                                <small>${e.mealDescription}</small>
+                                <p><small>Preparation time - ${e.mealPrepTime}mins</small></p>
+                                <button class="shop-item-button">Add to cart</button>
+                                <hr/>
                             </div>
-                            <small>${e.mealDescription}</small>
-                            <p><small>Preparation time - ${e.mealPrepTime}mins</small></p>
-                            <button class="shop-item-button">Add to cart</button>
-                            <hr/>
-                        </div>
-                    `;
+                        `;
+                    }
                     p4Title.classList.remove('hidden-p');
                 });
                 addEventListeners();
@@ -208,18 +216,20 @@ function showPork() {
             .then(function (data) {
                 // console.log(data);
                 data[0].pork.forEach((e) => {
-                    porkOnlineList.innerHTML += `
-                        <div class="shop-item">
-                            <div class="title-price">
-                                <p class="shop-item-title">${e.mealName}</p>
-                                <p class="shop-item-price">${e.mealPrice} $</p>
+                    if (e) {
+                        porkOnlineList.innerHTML += `
+                            <div class="shop-item">
+                                <div class="title-price">
+                                    <p class="shop-item-title">${e.mealName}</p>
+                                    <p class="shop-item-price">${e.mealPrice} $</p>
+                                </div>
+                                <small>${e.mealDescription}</small>
+                                <p><small>Preparation time - ${e.mealPrepTime}mins</small></p>
+                                <button class="shop-item-button">Add to cart</button>
+                                <hr/>
                             </div>
-                            <small>${e.mealDescription}</small>
-                            <p><small>Preparation time - ${e.mealPrepTime}mins</small></p>
-                            <button class="shop-item-button">Add to cart</button>
-                            <hr/>
-                        </div>
-                    `;
+                        `;
+                    }
                     p5Title.classList.remove('hidden-p');
                 });
                 addEventListeners();
@@ -246,18 +256,20 @@ function showLamb() {
             .then(function (data) {
                 // console.log(data);
                 data[0].lamb.forEach((e) => {
-                    lambOnlineList.innerHTML += `
-                        <div class="shop-item">
-                            <div class="title-price">
-                                <p class="shop-item-title">${e.mealName}</p>
-                                <p class="shop-item-price">${e.mealPrice} $</p>
+                    if (e) {
+                        lambOnlineList.innerHTML += `
+                            <div class="shop-item">
+                                <div class="title-price">
+                                    <p class="shop-item-title">${e.mealName}</p>
+                                    <p class="shop-item-price">${e.mealPrice} $</p>
+                                </div>
+                                <small>${e.mealDescription}</small>
+                                <p><small>Preparation time - ${e.mealPrepTime}mins</small></p>
+                                <button class="shop-item-button">Add to cart</button>
+                                <hr/>
                             </div>
-                            <small>${e.mealDescription}</small>
-                            <p><small>Preparation time - ${e.mealPrepTime}mins</small></p>
-                            <button class="shop-item-button">Add to cart</button>
-                            <hr/>
-                        </div>
-                    `;
+                        `;
+                    }
                     p6Title.classList.remove('hidden-p');
                 });
                 addEventListeners();
@@ -284,18 +296,20 @@ function showSeafood() {
             .then(function (data) {
                 // console.log(data);
                 data[0].seafood.forEach((e) => {
-                    seafoodOnlineList.innerHTML += `
-                        <div class="shop-item">
-                            <div class="title-price">
-                                <p class="shop-item-title">${e.mealName}</p>
-                                <p class="shop-item-price">${e.mealPrice} $</p>
+                    if (e) {
+                        seafoodOnlineList.innerHTML += `
+                            <div class="shop-item">
+                                <div class="title-price">
+                                    <p class="shop-item-title">${e.mealName}</p>
+                                    <p class="shop-item-price">${e.mealPrice} $</p>
+                                </div>
+                                <small>${e.mealDescription}</small>
+                                <p><small>Preparation time - ${e.mealPrepTime}mins</small></p>
+                                <button class="shop-item-button">Add to cart</button>
+                                <hr/>
                             </div>
-                            <small>${e.mealDescription}</small>
-                            <p><small>Preparation time - ${e.mealPrepTime}mins</small></p>
-                            <button class="shop-item-button">Add to cart</button>
-                            <hr/>
-                        </div>
-                    `;
+                        `;
+                    }
                     p7Title.classList.remove('hidden-p');
                 });
                 addEventListeners();
@@ -322,18 +336,20 @@ function showPasta() {
             .then(function (data) {
                 // console.log(data);
                 data[0].pasta.forEach((e) => {
-                    pastaOnlineList.innerHTML += `
-                        <div class="shop-item">
-                            <div class="title-price">
-                                <p class="shop-item-title">${e.mealName}</p>
-                                <p class="shop-item-price">${e.mealPrice} $</p>
+                    if (e) {
+                        pastaOnlineList.innerHTML += `
+                            <div class="shop-item">
+                                <div class="title-price">
+                                    <p class="shop-item-title">${e.mealName}</p>
+                                    <p class="shop-item-price">${e.mealPrice} $</p>
+                                </div>
+                                <small>${e.mealDescription}</small>
+                                <p><small>Preparation time - ${e.mealPrepTime}mins</small></p>
+                                <button class="shop-item-button">Add to cart</button>
+                                <hr/>
                             </div>
-                            <small>${e.mealDescription}</small>
-                            <p><small>Preparation time - ${e.mealPrepTime}mins</small></p>
-                            <button class="shop-item-button">Add to cart</button>
-                            <hr/>
-                        </div>
-                    `;
+                        `;
+                    }
                     p8Title.classList.remove('hidden-p');
                 });
                 addEventListeners();
@@ -360,18 +376,20 @@ function showDessert() {
             .then(function (data) {
                 // console.log(data);
                 data[0].dessert.forEach((e) => {
-                    dessertOnlineList.innerHTML += `
-                        <div class="shop-item">
-                            <div class="title-price">
-                                <p class="shop-item-title">${e.mealName}</p>
-                                <p class="shop-item-price">${e.mealPrice} $</p>
+                    if (e) {
+                        dessertOnlineList.innerHTML += `
+                            <div class="shop-item">
+                                <div class="title-price">
+                                    <p class="shop-item-title">${e.mealName}</p>
+                                    <p class="shop-item-price">${e.mealPrice} $</p>
+                                </div>
+                                <small>${e.mealDescription}</small>
+                                <p><small>Preparation time - ${e.mealPrepTime}mins</small></p>
+                                <button class="shop-item-button">Add to cart</button>
+                                <hr/>
                             </div>
-                            <small>${e.mealDescription}</small>
-                            <p><small>Preparation time - ${e.mealPrepTime}mins</small></p>
-                            <button class="shop-item-button">Add to cart</button>
-                            <hr/>
-                        </div>
-                    `;
+                        `;
+                    }
                     p9Title.classList.remove('hidden-p');
                 });
                 addEventListeners();
@@ -398,18 +416,20 @@ function showDrinks() {
             .then(function (data) {
                 // console.log(data);
                 data[0].drinks.forEach((e) => {
-                    drinksOnlineList.innerHTML += `
-                        <div class="shop-item">
-                            <div class="title-price">
-                                <p class="shop-item-title">${e.mealName}</p>
-                                <p class="shop-item-price">${e.mealPrice} $</p>
+                    if (e) {
+                        drinksOnlineList.innerHTML += `
+                            <div class="shop-item">
+                                <div class="title-price">
+                                    <p class="shop-item-title">${e.mealName}</p>
+                                    <p class="shop-item-price">${e.mealPrice} $</p>
+                                </div>
+                                <small>${e.mealDescription}</small>
+                                <p><small>Preparation time - ${e.mealPrepTime}mins</small></p>
+                                <button class="shop-item-button">Add to cart</button>
+                                <hr/>
                             </div>
-                            <small>${e.mealDescription}</small>
-                            <p><small>Preparation time - ${e.mealPrepTime}mins</small></p>
-                            <button class="shop-item-button">Add to cart</button>
-                            <hr/>
-                        </div>
-                    `;
+                        `;
+                    }
                     p10Title.classList.remove('hidden-p');
                 });
                 addEventListeners();
@@ -438,7 +458,7 @@ function showNewMeal() {
                 let ids = Object.keys(data);
                 if (ids != 0) {
                     ids.forEach((key) => {
-                        if (key != 0) {
+                        if (key != 0 && data[key] != null) {
                             newMealOnlineList.innerHTML += `
                                 <div class="shop-item">
                                     <div class="title-price">
@@ -549,6 +569,24 @@ function addEventsToPlusBtns() {
         plusBtn.addEventListener('click', quantityChangedPlus);
     }
 }
+//!BUG - for manually change input quantity by user
+//-add events for manually change input(trebuie gandit unde trebuie adaugat)
+// function addEventsOnchangeInputs() {
+//     let quantityInputs = document.getElementsByClassName('cart-quantity-input');
+//     for (let i = 0; i < quantityInputs.length; i++) {
+//         let input = quantityInputs[i];
+//         input.addEventListener('change', quantityChanged);
+//     }
+// }
+// //-aici trebuie apelate si alte functii!!
+// function quantityChanged(event) {
+//     let input = event.target;
+//     if (isNaN(input.value) || input.value <= 0) {
+//         input.value = 1;
+//     }
+//      trebuie gandit cum sa creasca si itemsCount
+//     updateCartTotal();
+// }
 //-add event when 'Order Now' is clicked
 document.getElementById('btn-purchase').addEventListener('click', purchaseClicked);
 //function for purchase items - Order Now btn
@@ -690,6 +728,7 @@ function addItemToCart(title, price) {
     howManyClicksOnAdd(); //how many clicks on this button
     addEventsToMinusBtns(); //add events for minus btns
     addEventsToPlusBtns(); //add events for plus btns
+    // addEventsOnchangeInputs();//!add events onchange input
     saveCartToLS(); //save cart to LS
     saveCountToLS(); //save count to LS
 }

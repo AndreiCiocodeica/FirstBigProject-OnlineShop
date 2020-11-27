@@ -30,26 +30,29 @@ function showMenu() {
 }
 
 function getBreakfastFromAPI() {
-    fetch('https://myfirstproject-b0fb4.firebaseio.com/meals.json')
+    fetch('https://myfirstproject-b0fb4.firebaseio.com/meals/0/breakfast.json')
         .then(function (res) {
             return res.json();
         })
         .then(function (data) {
             // console.log(data);
-            data[0].breakfast.forEach((e) => {
-                breakfastList.innerHTML += `
-                    <div class="list">
-                        <img src="${e.mealPicture}">
-                        <div class="list-text">
-                            <div class="list-name-price">
-                                <p>${e.mealName}</p>
-                                <p>$${e.mealPrice}</p>
+            let ids = Object.keys(data);
+            ids.forEach((key) => {
+                if (data[key] != null) {
+                    breakfastList.innerHTML += `
+                        <div class="list">
+                            <img src="${data[key].mealPicture}">
+                            <div class="list-text">
+                                <div class="list-name-price">
+                                    <p>${data[key].mealName}</p>
+                                    <p>$${data[key].mealPrice}</p>
+                                </div>
+                                <small>${data[key].mealDescription}</small>
+                                <a href="details.html?id=${data[key].mealId}">View Recipe</a>
                             </div>
-                            <small>${e.mealDescription}</small>
-                            <a href="details.html?id=${e.mealId}">View Recipe</a>
                         </div>
-                    </div>
-                `;
+                    `;
+                }
             });
         })
         .catch(function (err) {
@@ -58,26 +61,29 @@ function getBreakfastFromAPI() {
 }
 
 function getStarterFromAPI() {
-    fetch('https://myfirstproject-b0fb4.firebaseio.com/meals.json')
+    fetch('https://myfirstproject-b0fb4.firebaseio.com/meals/0/starter.json')
         .then(function (res) {
             return res.json();
         })
         .then(function (data) {
             // console.log(data);
-            data[0].starter.forEach((e) => {
-                starterList.innerHTML += `
-                    <div class="list">
-                        <img src="${e.mealPicture}">
-                        <div class="list-text">
-                            <div class="list-name-price">
-                                <p>${e.mealName}</p>
-                                <p>$${e.mealPrice}</p>
+            let ids = Object.keys(data);
+            ids.forEach((key) => {
+                if (data[key] != null) {
+                    starterList.innerHTML += `
+                        <div class="list">
+                            <img src="${data[key].mealPicture}">
+                            <div class="list-text">
+                                <div class="list-name-price">
+                                    <p>${data[key].mealName}</p>
+                                    <p>$${data[key].mealPrice}</p>
+                                </div>
+                                <small>${data[key].mealDescription}</small>
+                                <a href="details.html?id=${data[key].mealId}">View Recipe</a>
                             </div>
-                            <small>${e.mealDescription}</small>
-                            <a href="details.html?id=${e.mealId}">View Recipe</a>
                         </div>
-                    </div>
-                `;
+                    `;
+                }
             });
         })
         .catch(function (err) {
@@ -86,26 +92,29 @@ function getStarterFromAPI() {
 }
 
 function getChickenFromAPI() {
-    fetch('https://myfirstproject-b0fb4.firebaseio.com/meals.json')
+    fetch('https://myfirstproject-b0fb4.firebaseio.com/meals/0/chicken.json')
         .then(function (res) {
             return res.json();
         })
         .then(function (data) {
             // console.log(data);
-            data[0].chicken.forEach((e) => {
-                chickenList.innerHTML += `
-                    <div class="list">
-                        <img src="${e.mealPicture}">
-                        <div class="list-text">
-                            <div class="list-name-price">
-                                <p>${e.mealName}</p>
-                                <p>$${e.mealPrice}</p>
+            let ids = Object.keys(data);
+            ids.forEach((key) => {
+                if (data[key] != null) {
+                    chickenList.innerHTML += `
+                        <div class="list">
+                            <img src="${data[key].mealPicture}">
+                            <div class="list-text">
+                                <div class="list-name-price">
+                                    <p>${data[key].mealName}</p>
+                                    <p>$${data[key].mealPrice}</p>
+                                </div>
+                                <small>${data[key].mealDescription}</small>
+                                <a href="details.html?id=${data[key].mealId}">View Recipe</a>
                             </div>
-                            <small>${e.mealDescription}</small>
-                            <a href="details.html?id=${e.mealId}">View Recipe</a>
                         </div>
-                    </div>
-                `;
+                    `;
+                }
             });
         })
         .catch(function (err) {
@@ -114,26 +123,29 @@ function getChickenFromAPI() {
 }
 
 function getBeefFromAPI() {
-    fetch('https://myfirstproject-b0fb4.firebaseio.com/meals.json')
+    fetch('https://myfirstproject-b0fb4.firebaseio.com/meals/0/beef.json')
         .then(function (res) {
             return res.json();
         })
         .then(function (data) {
             // console.log(data);
-            data[0].beef.forEach((e) => {
-                beefList.innerHTML += `
-                    <div class="list">
-                        <img src="${e.mealPicture}">
-                        <div class="list-text">
-                            <div class="list-name-price">
-                                <p>${e.mealName}</p>
-                                <p>$${e.mealPrice}</p>
+            let ids = Object.keys(data);
+            ids.forEach((key) => {
+                if (data[key] != null) {
+                    beefList.innerHTML += `
+                        <div class="list">
+                            <img src="${data[key].mealPicture}">
+                            <div class="list-text">
+                                <div class="list-name-price">
+                                    <p>${data[key].mealName}</p>
+                                    <p>$${data[key].mealPrice}</p>
+                                </div>
+                                <small>${data[key].mealDescription}</small>
+                                <a href="details.html?id=${data[key].mealId}">View Recipe</a>
                             </div>
-                            <small>${e.mealDescription}</small>
-                            <a href="details.html?id=${e.mealId}">View Recipe</a>
                         </div>
-                    </div>
-                `;
+                    `;
+                }
             });
         })
         .catch(function (err) {
@@ -142,26 +154,29 @@ function getBeefFromAPI() {
 }
 
 function getPorkFromAPI() {
-    fetch('https://myfirstproject-b0fb4.firebaseio.com/meals.json')
+    fetch('https://myfirstproject-b0fb4.firebaseio.com/meals/0/pork.json')
         .then(function (res) {
             return res.json();
         })
         .then(function (data) {
             // console.log(data);
-            data[0].pork.forEach((e) => {
-                porkList.innerHTML += `
-                    <div class="list">
-                        <img src="${e.mealPicture}">
-                        <div class="list-text">
-                            <div class="list-name-price">
-                                <p>${e.mealName}</p>
-                                <p>$${e.mealPrice}</p>
+            let ids = Object.keys(data);
+            ids.forEach((key) => {
+                if (data[key] != null) {
+                    porkList.innerHTML += `
+                        <div class="list">
+                            <img src="${data[key].mealPicture}">
+                            <div class="list-text">
+                                <div class="list-name-price">
+                                    <p>${data[key].mealName}</p>
+                                    <p>$${data[key].mealPrice}</p>
+                                </div>
+                                <small>${data[key].mealDescription}</small>
+                                <a href="details.html?id=${data[key].mealId}">View Recipe</a>
                             </div>
-                            <small>${e.mealDescription}</small>
-                            <a href="details.html?id=${e.mealId}">View Recipe</a>
                         </div>
-                    </div>
-                `;
+                    `;
+                }
             });
         })
         .catch(function (err) {
@@ -170,26 +185,29 @@ function getPorkFromAPI() {
 }
 
 function getLambFromAPI() {
-    fetch('https://myfirstproject-b0fb4.firebaseio.com/meals.json')
+    fetch('https://myfirstproject-b0fb4.firebaseio.com/meals/0/lamb.json')
         .then(function (res) {
             return res.json();
         })
         .then(function (data) {
             // console.log(data);
-            data[0].lamb.forEach((e) => {
-                lambList.innerHTML += `
-                    <div class="list">
-                        <img src="${e.mealPicture}">
-                        <div class="list-text">
-                            <div class="list-name-price">
-                                <p>${e.mealName}</p>
-                                <p>$${e.mealPrice}</p>
+            let ids = Object.keys(data);
+            ids.forEach((key) => {
+                if (data[key] != null) {
+                    lambList.innerHTML += `
+                        <div class="list">
+                            <img src="${data[key].mealPicture}">
+                            <div class="list-text">
+                                <div class="list-name-price">
+                                    <p>${data[key].mealName}</p>
+                                    <p>$${data[key].mealPrice}</p>
+                                </div>
+                                <small>${data[key].mealDescription}</small>
+                                <a href="details.html?id=${data[key].mealId}">View Recipe</a>
                             </div>
-                            <small>${e.mealDescription}</small>
-                            <a href="details.html?id=${e.mealId}">View Recipe</a>
                         </div>
-                    </div>
-                `;
+                    `;
+                }
             });
         })
         .catch(function (err) {
@@ -198,26 +216,29 @@ function getLambFromAPI() {
 }
 
 function getSeafoodFromAPI() {
-    fetch('https://myfirstproject-b0fb4.firebaseio.com/meals.json')
+    fetch('https://myfirstproject-b0fb4.firebaseio.com/meals/0/seafood.json')
         .then(function (res) {
             return res.json();
         })
         .then(function (data) {
             // console.log(data);
-            data[0].seafood.forEach((e) => {
-                seafoodList.innerHTML += `
-                    <div class="list">
-                        <img src="${e.mealPicture}">
-                        <div class="list-text">
-                            <div class="list-name-price">
-                                <p>${e.mealName}</p>
-                                <p>$${e.mealPrice}</p>
+            let ids = Object.keys(data);
+            ids.forEach((key) => {
+                if (data[key] != null) {
+                    seafoodList.innerHTML += `
+                        <div class="list">
+                            <img src="${data[key].mealPicture}">
+                            <div class="list-text">
+                                <div class="list-name-price">
+                                    <p>${data[key].mealName}</p>
+                                    <p>$${data[key].mealPrice}</p>
+                                </div>
+                                <small>${data[key].mealDescription}</small>
+                                <a href="details.html?id=${data[key].mealId}">View Recipe</a>
                             </div>
-                            <small>${e.mealDescription}</small>
-                            <a href="details.html?id=${e.mealId}">View Recipe</a>
                         </div>
-                    </div>
-                `;
+                    `;
+                }
             });
         })
         .catch(function (err) {
@@ -226,26 +247,29 @@ function getSeafoodFromAPI() {
 }
 
 function getPastaFromAPI() {
-    fetch('https://myfirstproject-b0fb4.firebaseio.com/meals.json')
+    fetch('https://myfirstproject-b0fb4.firebaseio.com/meals/0/pasta.json')
         .then(function (res) {
             return res.json();
         })
         .then(function (data) {
             // console.log(data);
-            data[0].pasta.forEach((e) => {
-                pastaList.innerHTML += `
-                    <div class="list">
-                        <img src="${e.mealPicture}">
-                        <div class="list-text">
-                            <div class="list-name-price">
-                                <p>${e.mealName}</p>
-                                <p>$${e.mealPrice}</p>
+            let ids = Object.keys(data);
+            ids.forEach((key) => {
+                if (data[key] != null) {
+                    pastaList.innerHTML += `
+                        <div class="list">
+                            <img src="${data[key].mealPicture}">
+                            <div class="list-text">
+                                <div class="list-name-price">
+                                    <p>${data[key].mealName}</p>
+                                    <p>$${data[key].mealPrice}</p>
+                                </div>
+                                <small>${data[key].mealDescription}</small>
+                                <a href="details.html?id=${data[key].mealId}">View Recipe</a>
                             </div>
-                            <small>${e.mealDescription}</small>
-                            <a href="details.html?id=${e.mealId}">View Recipe</a>
                         </div>
-                    </div>
-                `;
+                    `;
+                }
             });
         })
         .catch(function (err) {
@@ -254,26 +278,29 @@ function getPastaFromAPI() {
 }
 
 function getDessertFromAPI() {
-    fetch('https://myfirstproject-b0fb4.firebaseio.com/meals.json')
+    fetch('https://myfirstproject-b0fb4.firebaseio.com/meals/0/dessert.json')
         .then(function (res) {
             return res.json();
         })
         .then(function (data) {
             // console.log(data);
-            data[0].dessert.forEach((e) => {
-                dessertList.innerHTML += `
-                    <div class="list">
-                        <img src="${e.mealPicture}">
-                        <div class="list-text">
-                            <div class="list-name-price">
-                                <p>${e.mealName}</p>
-                                <p>$${e.mealPrice}</p>
+            let ids = Object.keys(data);
+            ids.forEach((key) => {
+                if (data[key] != null) {
+                    dessertList.innerHTML += `
+                        <div class="list">
+                            <img src="${data[key].mealPicture}">
+                            <div class="list-text">
+                                <div class="list-name-price">
+                                    <p>${data[key].mealName}</p>
+                                    <p>$${data[key].mealPrice}</p>
+                                </div>
+                                <small>${data[key].mealDescription}</small>
+                                <a href="details.html?id=${data[key].mealId}">View Recipe</a>
                             </div>
-                            <small>${e.mealDescription}</small>
-                            <a href="details.html?id=${e.mealId}">View Recipe</a>
                         </div>
-                    </div>
-                `;
+                    `;
+                }
             });
         })
         .catch(function (err) {
@@ -282,26 +309,29 @@ function getDessertFromAPI() {
 }
 
 function getDrinksFromAPI() {
-    fetch('https://myfirstproject-b0fb4.firebaseio.com/meals.json')
+    fetch('https://myfirstproject-b0fb4.firebaseio.com/meals/0/drinks.json')
         .then(function (res) {
             return res.json();
         })
         .then(function (data) {
             // console.log(data);
-            data[0].drinks.forEach((e) => {
-                drinksList.innerHTML += `
-                    <div class="list">
-                        <img src="${e.mealPicture}">
-                        <div class="list-text">
-                            <div class="list-name-price">
-                                <p>${e.mealName}</p>
-                                <p>$${e.mealPrice}</p>
+            let ids = Object.keys(data);
+            ids.forEach((key) => {
+                if (data[key] != null) {
+                    drinksList.innerHTML += `
+                        <div class="list">
+                            <img src="${data[key].mealPicture}">
+                            <div class="list-text">
+                                <div class="list-name-price">
+                                    <p>${data[key].mealName}</p>
+                                    <p>$${data[key].mealPrice}</p>
+                                </div>
+                                <small>${data[key].mealDescription}</small>
+                                <a href="details.html?id=${data[key].mealId}">View Recipe</a>
                             </div>
-                            <small>${e.mealDescription}</small>
-                            <a href="details.html?id=${e.mealId}">View Recipe</a>
                         </div>
-                    </div>
-                `;
+                    `;
+                }
             });
         })
         .catch(function (err) {
@@ -320,7 +350,7 @@ function getNewMealAddedFromAPI() {
             // console.log(ids);
             if (ids != 0) {
                 ids.forEach(function (key) {
-                    if (key != 0) {
+                    if (key != 0 && data[key] != null) {
                         newMealAddedList.innerHTML += `
                             <div class="list">
                                 <img src="${data[key].mealPicture}">
